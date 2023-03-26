@@ -10,6 +10,11 @@
     "version": "0.0.0"
   },
   "tauri": {
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true,
+      "menuOnLeftClick": false
+    },
     "allowlist": {
       "all": true
     },
@@ -28,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.abbasioffcial.laterx",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -52,13 +57,19 @@
     "updater": {
       "active": false
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "fullscreen": false,
         "height": 600,
-        "resizable": true,
-        "title": "LaterX",
-        "width": 800
+        "resizable": false,
+        "title": "menubar",
+        "width": 600,
+        "visible": false,
+        "hiddenTitle": true,
+        "decorations": false,
+        "focus": false,
+        "transparent": true
       }
     ]
   }
